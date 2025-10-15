@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flag Quiz - Bayrak Bilgi Oyunu</title>
+    <style>
+        :root {
+            --primary-color: #007AFF; /* Ana Renk (Mavi) */
+            --background-color: #f4f4f9; /* Arka Plan */
+            --text-color: #333;
+            --white: #ffffff;
+            --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        header img {
+            width: 80px;
+            height: 80px;
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+            margin-right: 20px;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .hero {
+            text-align: center;
+            padding: 20px;
+        }
+        .hero h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        .hero p {
+            font-size: 1.1em;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+        }
+        .download-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: var(--primary-color);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+        .btn:hover {
+            transform: translateY(-3px);
+            background-color: #0056b3;
+        }
+        .features {
+            padding: 50px 0;
+            text-align: center;
+        }
+        .features h3 {
+            font-size: 2em;
+            margin-bottom: 40px;
+        }
+        .screenshots {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .screenshots img {
+            width: 250px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s;
+        }
+        .screenshots img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+            border-top: 1px solid #ddd;
+        }
+        footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+            }
+            header img {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+            header h1 {
+                font-size: 2em;
+            }
+            .screenshots img {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <img src="assets/app-icon.png" alt="Flag Quiz App Icon">
+            <div>
+                <h1>Flag Quiz</h1>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero">
+                <h2>Dünya Bayraklarını Öğrenmenin En Eğlenceli Yolu</h2>
+                <p>
+                    Farklı oyun modlarıyla bayrak bilginizi test edin, en yüksek skorları yapın ve coğrafya bilginizi geliştirin!
+                </p>
+                <div class="download-buttons">
+                    <a href="#" class="btn">App Store'dan İndir</a>
+                    <a href="#" class="btn">Google Play'den Alın</a>
+                </div>
+            </section>
+
+            <section class="features">
+                <h3>Özellikler</h3>
+                <div class="screenshots">
+                    <img src="assets/screenshot1.png" alt="Uygulama Ekran Görüntüsü 1">
+                    <img src="assets/screenshot2.png" alt="Uygulama Ekran Görüntüsü 2">
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>
+            <a href="https://alierensevinc.github.io/midoku-website/privacy-policy" target="_blank">Privacy Policy</a> | 
+            <a href="mailto:sevinc.aeren@gmail.com">Contact Support</a>
+        </p>
+        <p>&copy; 2025 Ali Eren Sevinç. Tüm hakları saklıdır.</p>
+    </footer>
+
+</body>
+</html>
